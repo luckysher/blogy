@@ -1,34 +1,26 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "blogss",
-
+    'name': "Blogy",
+    'version': '1.0.1',
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+            My favorite blogs.
+        """,
     'description': """
-        Long description of module's purpose
+        Blogy app specially for the user who have great interest in blogs writing and reading. User can write their
+        blogs here and read other user blogs free of cost.
     """,
-
-    'author': "Your Company",
-    'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-
-    # always loaded
+    'author': "luckyshera",
+    'website': "http://www.luckyshera.com",
+    'category': 'blogs',
+    'depends': ['website'],
     'data': [
-        # 'security/ir.model.access.csv',
         'templates.xml',
     ],
-    # only loaded in demonstration mode
     'demo': [
         'demo.xml',
     ],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+
 }
